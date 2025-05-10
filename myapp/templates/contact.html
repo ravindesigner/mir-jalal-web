@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <style>
+    body { font-family: Arial; background: #e0f7fa; padding: 20px; }
+    nav a { margin-right: 15px; text-decoration: none; color: #333; }
+    form { max-width: 400px; background: #fff; padding: 20px; border-radius: 10px; }
+    input, textarea { width: 90%; margin-bottom: 10px; padding: 8px; }
+  </style>
+</head>
+<body>
+  <center>
+  <nav>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'personal_info' %}">Personal Info</a>
+    <a href="{% url 'description' %}">About Me</a>
+    <a href="{% url 'contact' %}">Contact</a>
+  </nav>
+
+  <h1>Contact Me</h1>
+  <form method="post">
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Password:</label>
+    <input type="password" name="password" required>
+
+    <label>Leave a Message:</label>
+    <textarea name="message" rows="4"></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</center>
+</body>
+</html>
