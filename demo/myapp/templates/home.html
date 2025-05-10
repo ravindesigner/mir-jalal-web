@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Mir Jalal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f5f7fa;
+            margin: 0;
+        }
+        header, nav, footer {
+            text-align: center;
+            background: rgb(20, 107, 177);
+            color: white;
+            padding: 20px;
+        }
+        nav {
+            background: rgb(20, 107, 177);
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: rgb(255, 208, 0);
+        }
+        main {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        main img {
+          border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mir Jalal</h1>
+        <p>Photographer & Graphic Designer</p>
+    </header>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'portfolio' %}">Portfolio</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'contact' %}">Contact</a>
+    </nav>
+    <main>
+      <center><img src="https://scontent.fbgw4-4.fna.fbcdn.net/v/t39.30808-1/490727302_4056200617947964_5652103264494893381_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeH6bVr2iuf6BjW7QQRg_nK-DvCslsAZzoQO8KyWwBnOhA1CB8si6PjtkkA8TL_QBfOpYBAl2YLWR6Wbv2W9SylP&_nc_ohc=q5Et63NBwNoQ7kNvwGIFovo&_nc_oc=AdkBQZOjC_JoHSmiRSRzaSUHyJv54cZrgw3eZpFkFeA0YZsKdeGIsWCu8QHMLBbJqNY&_nc_zt=24&_nc_ht=scontent.fbgw4-4.fna&_nc_gid=spK4lqz97kJOtub0dqhs_Q&oh=00_AfLRcLavtsHYzsYM22c5Wq0K-e8klJfmKtC5AtGDXECl5w&oe=68258602" alt="Huda Talb Qadir" width="20%">
+        <h2>Welcome to My Portfolio</h2></center>
+        <p>Hello! I’m Mir Jalal, a creative visual artist from Sulaymaniyah specializing in photography and graphic design. Explore my work and get in touch!</p>
+    </main>
+    <footer>
+        &copy; 2025 Mir Jalal
+    </footer>
+</body>
+</html>
